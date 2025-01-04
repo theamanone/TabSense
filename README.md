@@ -2,12 +2,12 @@
 
 TabSense is an intelligent Chrome extension that helps you manage your browser tabs efficiently using AI-powered insights and smart grouping features.
 
-![TabSense Screenshot](https://github.com/theamanone/TabSense/raw/main/screenshots/screenshot1.png)
+![TabSense Screenshot](screenshots/Screenshot1.png)
 
 ## ⚡ Quick Install
 
 ### Option 1: Direct Installation (.crx)
-1. [Download TabSense.crx](https://github.com/theamanone/TabSense/releases/latest/download/TabSense.crx)
+1. [Download TabSense.crx](https://github.com/theamanone/TabSense/raw/main/releases/TabSense-v1.0.0.crx)
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable "Developer mode" in the top right
 4. Drag and drop the downloaded `.crx` file into the extensions page
