@@ -2,7 +2,7 @@
 
 TabSense is an intelligent Chrome extension that helps you manage your browser tabs efficiently using AI-powered insights and smart grouping features.
 
-![TabSense Screenshot](screenshots/main.png)
+![TabSense Screenshot](https://github.com/theamanone/TabSense/raw/main/screenshots/screenshot1.png)
 
 ## ⚡ Quick Install
 
