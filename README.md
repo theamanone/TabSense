@@ -4,27 +4,29 @@ TabSense is an intelligent Chrome extension that helps you manage your browser t
 
 ![TabSense Screenshot](screenshots/Screenshot1.png)
 
-## ⚡ Quick Install Guide
+## ⚡ Installation Methods
 
-### Easy Installation Steps:
+### Method 1: Direct Download (Recommended)
+1. [Download TabSense Extension](https://github.com/theamanone/TabSense/raw/main/dist/TabSense.crx)
+2. Open Chrome and type `chrome://extensions/` in the address bar
+3. Enable "Developer mode" in the top right corner
+4. Drag and drop the downloaded `TabSense.crx` file into the extensions page
+5. Click "Add extension" when prompted
 
-1. **Download the Extension**:
-   - Click the green "Code" button above
-   - Select "Download ZIP"
-   - Extract the ZIP file to a folder
+### Method 2: Manual Installation
+If Method 1 doesn't work, try this:
+1. [Download ZIP](https://github.com/theamanone/TabSense/archive/refs/heads/main.zip)
+2. Extract the ZIP file to a folder
+3. Open Chrome and go to `chrome://extensions/`
+4. Enable "Developer mode" in the top right
+5. Click "Load unpacked" and select the extracted folder
+6. The extension will be installed and ready to use!
 
-2. **Install in Chrome**:
-   - Open Chrome and go to `chrome://extensions/`
-   - Enable "Developer mode" in the top right corner
-   - Click "Load unpacked"
-   - Select the extracted folder
-   - That's it! You'll see the TabSense icon in your toolbar
-
-### Alternative: Clone Repository
+### Method 3: For Developers
 ```bash
 git clone https://github.com/theamanone/TabSense.git
 ```
-Then follow the same Chrome installation steps above.
+Then follow Method 2 steps 3-5.
 
 ## 🚀 Features
 
@@ -65,6 +67,14 @@ TabSense is completely safe and respects your privacy:
 - ✅ All analysis is done locally in your browser
 - ✅ You can disable analytics in settings
 - ✅ Easy to remove or disable at any time
+
+## ⚠️ Important Notes
+
+- This extension is distributed outside the Chrome Web Store for free
+- Chrome may show a warning about installing extensions from unknown sources
+- All code is open source and can be inspected on GitHub
+- No data is collected or transmitted outside your browser
+- You can easily uninstall the extension at any time from `chrome://extensions/`
 
 ## 🛠️ Development
 
