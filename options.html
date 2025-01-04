@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TabSense Settings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+        .settings-container {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .setting-group {
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        .setting-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        label {
+            flex-grow: 1;
+            font-size: 14px;
+        }
+        select, input[type="number"] {
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #d2d2d7;
+            font-size: 14px;
+        }
+        button {
+            background: #007aff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0063cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="settings-container">
+        <h1>TabSense Settings</h1>
+        
+        <div class="setting-group">
+            <h2>Tab Management</h2>
+            <div class="setting-item">
+                <label for="autoGroup">Auto-group new tabs from same domain</label>
+                <input type="checkbox" id="autoGroup">
+            </div>
+            <div class="setting-item">
+                <label for="inactiveTimeout">Hibernate inactive tabs after (minutes)</label>
+                <input type="number" id="inactiveTimeout" min="5" value="30">
+            </div>
+        </div>
+
+        <div class="setting-group">
+            <h2>Focus Mode</h2>
+            <div class="setting-item">
+                <label for="focusAction">When activating focus mode</label>
+                <select id="focusAction">
+                    <option value="minimize">Minimize other tabs</option>
+                    <option value="hibernate">Hibernate other tabs</option>
+                    <option value="close">Close other tabs</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="setting-group">
+            <h2>Analytics</h2>
+            <div class="setting-item">
+                <label for="collectAnalytics">Collect tab usage analytics</label>
+                <input type="checkbox" id="collectAnalytics" checked>
+            </div>
+            <div class="setting-item">
+                <button id="clearData">Clear All Data</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/options.js"></script>
+</body>
+</html>

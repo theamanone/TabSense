@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="app-title">
+                <img src="icons/layers.png" alt="TabFlow AI" class="app-icon">
+                <h1>TabFlow AI</h1>
+            </div>
+            <div class="search-bar">
+                <div class="search-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 14L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input type="text" id="searchTabs" placeholder="Search tabs...">
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="tabCount">0</div>
+                <div class="stat-label">Tabs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="memoryUsage">0</div>
+                <div class="stat-label">Memory</div>
+            </div>
+            <div class="stat-card task-card">
+                <div id="currentTask" class="task-info">
+                    <span class="task-icon">🎯</span>
+                    <span class="task-name">Analyzing...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="smartGroup" class="action-button primary" title="Group tabs from the same website together">
+                <span class="button-icon">📑</span>
+                Smart Group
+            </button>
+            <button id="optimize" class="action-button" title="Remove duplicate tabs and hibernate inactive ones to save memory">
+                <span class="button-icon">⚡</span>
+                Optimize
+            </button>
+            <button id="focus" class="action-button" title="Group related tabs and minimize others for better focus">
+                <span class="button-icon">🎯</span>
+                Focus
+            </button>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="section-header">
+            <h2>Open Tabs</h2>
+            <button id="expandTabs" class="expand-button">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="tabs-container">
+            <div id="tabList" class="tab-list"></div>
+        </div>
+
+        <!-- Suggestions Section -->
+        <div class="section-header">
+            <h2>Suggestions</h2>
+        </div>
+        <div id="suggestions" class="suggestions-list"></div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <button id="resetAnalytics" class="text-button" title="Clear all analytics data and start fresh">
+                <span class="button-icon">🔄</span>
+                Reset Analytics
+            </button>
+            <button id="openSettings" class="text-button" title="Configure extension settings">
+                <span class="button-icon">⚙️</span>
+                Settings
+            </button>
+        </div>
+    </div>
+
+    <script src="lib/chart.min.js"></script>
+    <script src="lib/gsap.min.js"></script>
+    <script src="js/taskManager.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

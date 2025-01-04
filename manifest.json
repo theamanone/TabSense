@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "TabSense",
+  "version": "1.0",
+  "description": "Intelligent tab management with AI-powered insights",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "scripting",
+    "system.memory"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/layers.png",
+      "48": "icons/layers48.png",
+      "128": "icons/layers128.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/layers.png",
+    "48": "icons/layers48.png",
+    "128": "icons/layers128.png"
+  }
+}
