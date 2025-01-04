@@ -4,24 +4,27 @@ TabSense is an intelligent Chrome extension that helps you manage your browser t
 
 ![TabSense Screenshot](screenshots/Screenshot1.png)
 
-## ⚡ Quick Install
+## ⚡ Quick Install Guide
 
-### Option 1: Direct Installation (.crx)
-1. [Download TabSense.crx](https://github.com/theamanone/TabSense/raw/main/releases/TabSense-v1.0.0.crx)
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Drag and drop the downloaded `.crx` file into the extensions page
+### Easy Installation Steps:
 
-### Option 2: Manual Installation (Latest Version)
-1. Download this repository:
-   ```bash
-   git clone https://github.com/theamanone/TabSense.git
-   ```
-   Or [Download ZIP](https://github.com/theamanone/TabSense/archive/refs/heads/main.zip)
+1. **Download the Extension**:
+   - Click the green "Code" button above
+   - Select "Download ZIP"
+   - Extract the ZIP file to a folder
 
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the downloaded folder
+2. **Install in Chrome**:
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable "Developer mode" in the top right corner
+   - Click "Load unpacked"
+   - Select the extracted folder
+   - That's it! You'll see the TabSense icon in your toolbar
+
+### Alternative: Clone Repository
+```bash
+git clone https://github.com/theamanone/TabSense.git
+```
+Then follow the same Chrome installation steps above.
 
 ## 🚀 Features
 
@@ -54,33 +57,19 @@ TabSense is an intelligent Chrome extension that helps you manage your browser t
    - Choose focus mode behavior
    - Manage analytics collection
 
-## 🔒 Privacy
+## 🔒 Privacy & Security
 
-TabSense respects your privacy:
-- No data is sent to external servers
-- All analysis is done locally in your browser
-- Analytics can be disabled in settings
-- You can reset all data at any time
+TabSense is completely safe and respects your privacy:
+- ✅ Open source - you can verify the code yourself
+- ✅ No data collection or external servers
+- ✅ All analysis is done locally in your browser
+- ✅ You can disable analytics in settings
+- ✅ Easy to remove or disable at any time
 
 ## 🛠️ Development
 
-### Prerequisites
-- Chrome Browser
-- Basic understanding of JavaScript and Chrome Extension APIs
+Want to contribute? Great! Here's how:
 
-### Setup for Development
-1. Clone the repository:
-```bash
-git clone https://github.com/theamanone/TabSense.git
-```
-
-2. Load the extension in Chrome:
-- Open `chrome://extensions/`
-- Enable "Developer mode"
-- Click "Load unpacked"
-- Select the extension directory
-
-### Contributing
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
@@ -91,16 +80,16 @@ git clone https://github.com/theamanone/TabSense.git
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## ⭐ Support TabSense
+
+If you find TabSense useful:
+- Star this repository ⭐
+- Share with friends and colleagues
+- Report issues or suggest features
+- Contribute to development
+
 ## 📧 Contact
 
 Aman - [@theamanone](https://github.com/theamanone)
 
 Project Link: [https://github.com/theamanone/TabSense](https://github.com/theamanone/TabSense)
-
-## ⭐ Support
-
-If you find TabSense useful, please consider:
-- Giving it a star on GitHub ⭐
-- Sharing it with friends and colleagues
-- Contributing to its development
-- Reporting any issues or suggesting features
